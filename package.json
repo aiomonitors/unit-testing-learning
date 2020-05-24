@@ -4,10 +4,12 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test": "mocha"
+    "test": "jest --forceExit --verbose"
   },
   "dependencies": {
     "chai": "^4.2.0",
-    "mocha": "^7.2.0"
+    "express": "^4.17.1",
+    "jest": "^26.0.1",
+    "supertest": "^4.0.2"
   }
 }
