@@ -1,9 +1,15 @@
+/* eslint-disable no-undef */
 const assert = require('assert');
-const expect = require('chai').expect;
-const { add, subtract, multiply, divide } = require('./operations');
+const { expect } = require('chai');
+const {
+    add,
+    subtract,
+    multiply,
+    divide,
+} = require('./operations');
 
 it('error thrown when NaN passed', () => {
-    expect(() => { add(1, 'adasd') }).to.throw('NaN args passed');
+    expect(() => { add(1, 'adasd'); }).to.throw('NaN args passed');
 });
 
 it('correctly calculates sum of 1 and 3', () => {
@@ -11,7 +17,7 @@ it('correctly calculates sum of 1 and 3', () => {
 });
 
 it('correctly calculates the sum of -1 and -1', () => {
-    assert.equal(add(-1, -1), -2)
+    assert.equal(add(-1, -1), -2);
 });
 
 it('correctly calculates difference of 6 and 3', () => {
